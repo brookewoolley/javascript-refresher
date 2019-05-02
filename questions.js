@@ -5,7 +5,6 @@ var selectElementsStartingWithA = function(array) {
 
 var selectElementsStartingWithVowel = function(array) {
   const result = array.filter(word => /^[aeiou]/.test(word));
-  console.log(result)
   return result;
 }
 
@@ -15,7 +14,8 @@ return result;
 }
 
 var removeNullAndFalseElements = function(array) {
-  return 'Write your method here';
+  const result = array.filter(word => word !== null && word !== false);
+  return result;
 }
 
 var reverseWordsInArray = function(array) {

@@ -3,7 +3,8 @@ var selectElementsStartingWithA = function(array) {
 }
 
 var selectElementsStartingWithA = function(array) {
-  return 'Write your method here';
+  const result = array.filter(word => word.startsWith('a'));
+  return result;
 }
 
 var selectElementsStartingWithVowel = function(array) {

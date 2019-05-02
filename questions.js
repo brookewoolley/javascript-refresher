@@ -24,11 +24,12 @@ var reverseWordsInArray = function(array) {
 }
 
 var everyPossiblePair = function(array) {
-  return 'Write your method here';
+
 }
 
 var allElementsExceptFirstThree = function(array) {
-  return 'Write your method here';
+  const result = array.slice(3);
+  return result;
 }
 
 var addElementToBeginning = function(array, element) {

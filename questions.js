@@ -19,7 +19,8 @@ var removeNullAndFalseElements = function(array) {
 }
 
 var reverseWordsInArray = function(array) {
-  return 'Write your method here';
+  const result = array.map(word => word.split("").reverse().join(""));
+  return result;
 }
 
 var everyPossiblePair = function(array) {

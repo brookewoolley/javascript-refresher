@@ -1,5 +1,5 @@
 var selectElementsStartingWithA = function(array) {
-  return 'Write your method here';
+
 }
 
 var selectElementsStartingWithA = function(array) {
@@ -11,7 +11,8 @@ var selectElementsStartingWithVowel = function(array) {
 }
 
 var removeNullElements = function(array) {
-  return 'Write your method here';
+const result = array.filter(word => word !== null);
+return result;
 }
 
 var removeNullAndFalseElements = function(array) {

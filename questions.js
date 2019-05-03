@@ -70,7 +70,9 @@ var shortestWord = function(array) {
 }
 
 var longestWord = function(array) {
-  return 'Write your method here';
+  array.sort(function (a, b) {
+  return b.length - a.length})
+  return array[0];
 }
 
 var sumNumbers = function(array) {

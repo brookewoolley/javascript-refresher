@@ -83,11 +83,12 @@ var sumNumbers = function(array) {
 }
 
 var repeatElements = function(array) {
-  return 'Write your method here';
+  let new_array = array.map(x => x)
+  return array.concat(new_array);
 }
 
 var stringToNumber = function(string) {
-  return 'Write your method here';
+  return Number(string);
 }
 
 var calculateAverage = function(array) {

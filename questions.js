@@ -38,11 +38,18 @@ var addElementToBeginning = function(array, element) {
 }
 
 var sortByLastLetter = function(array) {
-  return 'Write your method here';
+  function compare(a,b) {
+    if (a.slice(-1) < b.slice(-1)) return -1;
+    if (a.slice(-1) > b.slice(-1)) return 1;
+    return 0;
+  }
+  return array.sort(compare);
 }
 
 var getFirstHalf = function(string) {
-  return 'Write your method here';
+  let division = string.length / 2;
+  const result = Math.round(division);
+  return string.slice(0, result);
 }
 
 var makeNegative = function(number) {

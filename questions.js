@@ -47,13 +47,16 @@ var sortByLastLetter = function(array) {
 }
 
 var getFirstHalf = function(string) {
-  let division = string.length / 2;
-  const result = Math.round(division);
+  const result = Math.round(string.length / 2);
   return string.slice(0, result);
 }
 
 var makeNegative = function(number) {
-  return 'Write your method here';
+  if (number < 0) {
+    return number;
+  } else {
+    return (number - number) - number;
+  };
 }
 
 var numberOfPalindromes = function(array) {

@@ -60,11 +60,13 @@ var makeNegative = function(number) {
 }
 
 var numberOfPalindromes = function(array) {
-  return 'Write your method here';
+
 }
 
 var shortestWord = function(array) {
-  return 'Write your method here';
+  array.sort(function (a, b) {
+  return a.length - b.length})
+  return array[0];
 }
 
 var longestWord = function(array) {

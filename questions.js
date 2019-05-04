@@ -112,7 +112,12 @@ var convertArrayToObject = function(array) {
 }
 
 var getAllLetters = function(array) {
-  return 'Write your method here';
+  let new_array = [];
+  for (var i = 0; i < array.length; i++) {
+    new_array.push(array[i].split(""));
+  }
+  let result = new_array.flat().sort();
+  return [...new Set(result)];
 }
 
 var swapKeysAndValues = function(object) {

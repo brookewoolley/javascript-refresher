@@ -99,11 +99,16 @@ var calculateAverage = function(array) {
 }
 
 var getElementsUntilGreaterThanFive = function(array) {
-  return 'Write your method here';
+  // let result = array.filter(num => num <= 5);
+  // console.log(result);
 }
 
 var convertArrayToObject = function(array) {
-  return 'Write your method here';
+  var object = {};
+  for (var i = 0; i < array.length; i+=2) {
+   object[array[i]] = array[i+1];
+  };
+ return object;
 }
 
 var getAllLetters = function(array) {

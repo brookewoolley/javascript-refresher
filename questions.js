@@ -121,7 +121,7 @@ var getAllLetters = function(array) {
 }
 
 var swapKeysAndValues = function(object) {
-  return 'Write your method here';
+  // console.log(Object.entries(object)[2]);
 }
 
 var sumKeysAndValues = function(object) {
@@ -133,11 +133,18 @@ var removeCapitals = function(string) {
 }
 
 var roundUp = function(number) {
-  return 'Write your method here';
+  return Math.ceil(number);
+}
+
+var dateChecker = function(day) {
+  return day < 10 ? "0" + day : day;
 }
 
 var formatDateNicely = function(date) {
-  return 'Write your method here';
+  let day = dateChecker(date.getDate());
+  let month = dateChecker(date.getMonth() + 1);
+  let year = date.getFullYear();
+  return `${day}/${month}/${year}`
 }
 
 var getDomainName = function(string) {
